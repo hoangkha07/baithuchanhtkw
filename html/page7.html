@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hóa đơn mua hàng</title>
+</head>
+
+<body>
+<tbody>
+    <table border="1">
+    <tr>
+        <th>STT</th>
+        <th>Tên hàng</th>
+        <th>Số lượng</th>
+        <th>Đơn giá</th>
+        <th>ĐVT</th>
+        <th>Thành tiền</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Bánh Oreo</td>
+        <td class="soluong">2</td>
+        <td class="dongia">15000</td>
+        <td>Gói</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Sữa Vinamilk</td>
+        <td class="soluong">3</td>
+        <td class="dongia">17000</td>
+        <td>Hộp</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Mì Hảo Hảo</td>
+        <td class="soluong">10</td>
+        <td class="dongia">4500</td>
+        <td>Gói</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Coca Cola</td>
+        <td class="soluong">5</td>
+        <td class="dongia">12000</td>
+        <td>Lon</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>Nước Suối</td>
+        <td class="soluong">4</td>
+        <td class="dongia">7000</td>
+        <td>Chai</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>Bánh Tráng</td>
+        <td class="soluong">2</td>
+        <td class="dongia">25000</td>
+        <td>Bịch</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>Trà Xanh</td>
+        <td class="soluong">6</td>
+        <td class="dongia">10000</td>
+        <td>Chai</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>8</td>
+        <td>Kẹo</td>
+        <td class="soluong">8</td>
+        <td class="dongia">5000</td>
+        <td>Hộp</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>9</td>
+        <td>Viết chì</td>
+        <td class="soluong">12</td>
+        <td class="dongia">3000</td>
+        <td>Cây</td>
+        <td class="thanhtien"></td>
+    </tr>
+
+    <tr>
+        <td>10</td>
+        <td>Tập</td>
+        <td class="soluong">7</td>
+        <td class="dongia">12000</td>
+        <td>Quyển</td>
+        <td class="thanhtien"></td>
+    </tr>
+    <tr>
+        <td colspan="5"><b>Tổng thanh toán</b></td>
+        <td id="tongthanhtoan"></td>
+    </tr>
+    </table>
+</tbody>
+<script>
+
+    const sl = document.getElementsByClassName("soluong");
+    const dg = document.getElementsByClassName("dongia");
+    const tt = document.getElementsByClassName("thanhtien");
+
+    let tongthanhtoan = 0;
+
+    for(let i = 0; i < sl.length; i++){
+
+        let soluong = Number(sl[i].innerHTML);
+        let dongia = Number(dg[i].innerHTML);
+
+        let thanhtien = soluong * dongia;
+
+        tt[i].innerHTML = thanhtien + " VNĐ";
+
+        tongthanhtoan += thanhtien;
+    }
+
+    document.getElementById("tongthanhtoan").innerHTML =
+    tongthanhtoan + " VNĐ";
+
+</script>
+</body>
+</html>

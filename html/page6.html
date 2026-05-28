@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình chữ nhật</title>
+</head>
+
+<body>
+
+<script>
+
+    //Nhập chiều dài
+    let chieudai = Number(prompt("Nhập chiều dài:"));
+
+    let chieurong;
+
+    //Nhập chiều rộng bằng do while
+    do{
+        chieurong = Number(prompt("Nhập chiều rộng:"));
+
+    }while(chieurong > chieudai);
+
+    //Nếu chiều rộng = chiều dài thì tính diện tích hình vuông
+    if(chieurong == chieudai){
+
+        let dientich = chieudai * chieurong;
+
+       alert("Đây là hình vuông ");
+       alert("Diện tích hình vuông là: " + dientich);
+    }
+
+    //Nếu chiều rộng nhỏ hơn chiều dài thì tính diện tích hình chữ nhật
+    else{
+
+        let dientich = chieudai * chieurong;
+
+        alert(`Đây là hình chữ nhật `);
+        alert(`Diện tích hình chữ nhật là: ${dientich}`);
+    }
+
+</script>
+</body>
+</html>
