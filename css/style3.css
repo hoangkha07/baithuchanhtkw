@@ -1,15 +1,13 @@
-```css
-/* Reset cơ bản */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Nền trang */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #9face6);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #dff6ff, #b8e8fc);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,56 +15,94 @@ body{
     padding: 30px;
 }
 
-/* Bảng hóa đơn */
 table{
     width: 90%;
     max-width: 1000px;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 30px rgba(0, 120, 180, 0.15);
 }
 
-/* Tiêu đề */
 th{
-    background: #4a69bd;
+    background: #6ec6ff;
     color: white;
     padding: 15px;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
 }
 
-/* Ô dữ liệu */
+th:first-child{
+    border-top-left-radius: 18px;
+}
+
+th:last-child{
+    border-top-right-radius: 18px;
+}
+
 td{
-    padding: 12px;
+    padding: 12px 15px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px;
+    border-bottom: 1px solid #d9eefc;
 }
 
-/* Hover từng dòng */
-tr:hover{
-    background: #f1f2f6;
+tbody tr:nth-child(even):not(:last-child){
+    background: #f3fbff;
+}
+
+tbody tr:hover:not(:last-child){
+    background: #dff4ff;
     transition: 0.3s;
 }
 
-/* Cột thành tiền */
+td:nth-child(2){
+    text-align: left;
+    font-weight: 500;
+}
+
+.soluong,
+.dongia,
 .thanhtien{
-    color: #e55039;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.thanhtien{
+    color: #0077b6;
     font-weight: bold;
 }
 
+tbody tr:last-child{
+    background: #6ec6ff;
+}
+
+tbody tr:last-child td{
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+    padding: 18px;
+}
+
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 18px;
+}
+
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 18px;
+}
 
 #tongthanhtoan{
-    font-size: 20px;
-    font-weight: bold;
-    color: #27ae60;
+    font-size: 22px;
+    color: #070701 !important;
+    text-align: right;
 }
 
-/* Dòng tổng */
-tr:last-child td{
-    background: #f7f7f7;
-    font-weight: bold;
+
+.thanhtoan{
+     font-size: 18px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-```
