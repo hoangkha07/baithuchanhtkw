@@ -1,0 +1,107 @@
+
+body {
+    background-color: #f8f9fa; 
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+#product-list {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+
+.card {
+    border: none; 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
+}
+
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+    transition: transform 0.5s ease; 
+}
+
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    height: 42px; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.text-danger {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+.card-body .btn-primary {
+    background: linear-gradient(135deg, #19b8c7, #6adae9); 
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+   
+    margin-top: auto; 
+}
+.card-body .btn-primary:hover {
+    background: linear-gradient(135deg, #4088e7, #5bb2ec);
+    box-shadow: 0 4px 10px rgba(226, 175, 233, 0.322);
+}
+
+h2.text-center.mb-4 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #0584a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: block;
+}
+h2.text-center.mb-4::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #47e3ff;
+    margin: 12px auto 0 auto;
+    border-radius: 4px;
+}
