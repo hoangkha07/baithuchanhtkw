@@ -62,14 +62,14 @@ h2.text-center.mb-4::after {
     border-radius: 18px;
     overflow: hidden;
     background: #ffffff;
-    box-shadow: 0 5px 15px rgba(120,170,190,0.15);
+    box-shadow: 0 5px 15px rgba(24, 176, 236, 0.15);
     transition: 0.3s;
     height: 100%;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(120,170,190,0.25);
+    box-shadow: 0 10px 25px rgba(138, 217, 248, 0.836);
 }
 
 .card-img-top {
@@ -120,7 +120,7 @@ h2.text-center.mb-4::after {
 }
 
 .card-body .btn-primary:hover {
-    background: #5fb5db;
+    background: #0fb3fa;
 }
 
 .card:nth-child(odd) .card-title {

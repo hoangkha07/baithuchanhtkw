@@ -65,7 +65,7 @@ h3 {
 }
 
 #product-link:hover {
-    color: #01579b;
+    color: #0291ff;
     text-decoration: underline;
 }
 
@@ -80,7 +80,7 @@ h3 {
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(2, 136, 209, 0.2);
+    box-shadow: 0 8px 20px rgba(1, 110, 252, 0.74);
 }
 
 .card-img-top {
