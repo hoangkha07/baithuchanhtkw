@@ -36,15 +36,18 @@ h2.text-center.mb-4::after {
 }
 
 .btn-primary {
-    background: #7fc8e8;
+    background: #16b0f1 !important;
+    border-color: #7fc8e8 !important;
 }
 
 .btn-danger {
-    background: #a8e9d9f8;
+    background: #ff60a2 !important;
+    border-color: #f2a7c6 !important;
 }
 
 .btn-success {
-    background: #8bcfc3;
+    background: #00ac8c !important;
+    border-color: #8bcfc3 !important;
 }
 
 .text-center.mb-4 button:hover {

@@ -127,7 +127,7 @@ const products = [
     description: "Bơ già dừa non là món đồ uống thơm béo với sự kết hợp giữa bơ chín mềm mịn và dừa non tươi ngọt tự nhiên. Vị béo ngậy của bơ hòa quyện cùng độ giòn dai của dừa non tạo nên hương vị hài hòa, hấp dẫn và giàu dinh dưỡng. Đây là thức uống mát lạnh, thích hợp để giải khát và bổ sung năng lượng trong những ngày nóng.",
     image: "../assets/img/528871219_1148931657256092_9018023693759675752_n-db22.jpg",
     link: "https://kinhtedouong.vn/bo-gia-dua-non--su-hai-hoa-tu-nhung-vi-ngon-nguyen-ban-131297.html",
-     category: "drink"
+    category: "drink"
 },
 {
     id: 7,
@@ -136,7 +136,7 @@ const products = [
     description: "Matcha Latte là thức uống hấp dẫn được pha chế từ bột trà xanh matcha kết hợp với sữa tươi, tạo nên màu xanh đẹp mắt và hương thơm đặc trưng. Vị chát nhẹ của matcha hòa quyện cùng vị béo ngọt của sữa mang đến cảm giác cân bằng, dễ chịu khi thưởng thức. Đây là lựa chọn được nhiều người yêu thích nhờ hương vị tinh tế và khả năng mang lại cảm giác thư giãn.",
     image: "../assets/img/cach-pha-matcha-latte.jpg",
     link: "https://kingcoffee.com.vn/tin-tuc/cach-pha-matcha-latte/",
-     category: "drink"
+    category: "drink"
 },
 {
     id: 8,
@@ -145,7 +145,7 @@ const products = [
     description: "Trà đào cam sả là thức uống thanh mát với sự kết hợp hài hòa giữa vị trà thơm dịu, đào ngọt mềm, cam tươi chua nhẹ và hương sả thanh khiết. Hương vị chua ngọt cân bằng cùng mùi thơm tự nhiên tạo cảm giác sảng khoái, dễ chịu khi thưởng thức. Đây là lựa chọn lý tưởng để giải khát và tiếp thêm năng lượng trong những ngày nóng.",
     image: "../assets/img/huong-dan-cong-thuc-tra-dao-cam-sa-hut-khach-ngon-kho-cuong_20240526180626.jpg",
     link: "http://horecavn.com/cong-thuc-tra-dao-cam-sa.html",
-     category: "drink"
+    category: "drink"
 },
 ];
 
