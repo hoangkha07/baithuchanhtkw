@@ -1,8 +1,55 @@
-
 body {
-    background-color: #f8f9fa; 
+    background: #eef8fc;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    color: #333;
+    color: #444;
+}
+
+h2.text-center.mb-4 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    color: #4b8fa8;
+}
+
+h2.text-center.mb-4::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 10px;
+    background: #a8f1f3;
+}
+
+.text-center.mb-4 button {
+    border: none;
+    padding: 10px 28px;
+    margin: 8px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background: #7fc8e8;
+}
+
+.btn-danger {
+    background: #a8e9d9f8;
+}
+
+.btn-success {
+    background: #8bcfc3;
+}
+
+.text-center.mb-4 button:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
 }
 
 #product-list {
@@ -10,98 +57,92 @@ body {
     padding-bottom: 40px;
 }
 
-
-
 .card {
-    border: none; 
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    overflow: hidden; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    background-color: #ffffff;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(120,170,190,0.15);
+    transition: 0.3s;
+    height: 100%;
 }
 
 .card:hover {
-    transform: translateY(-8px); 
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(120,170,190,0.25);
 }
-
 
 .card-img-top {
-    height: 200px; 
-    object-fit: cover; 
-    transition: transform 0.5s ease; 
-}
-
-
-.card:hover .card-img-top {
-    transform: scale(1.05);
+    height: 220px;
+    object-fit: cover;
 }
 
 .card-body {
-    padding: 1.25rem;
+    padding: 18px;
     display: flex;
     flex-direction: column;
 }
 
 .card-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: #4b8fa8;
+    text-align: center;
     margin-bottom: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .card-text {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-    height: 42px; 
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    font-size: 0.95rem;
+    color: #777;
+    height: 45px;
     overflow: hidden;
-    margin-bottom: 15px;
+    display: -webkit-box;
+  
+    -webkit-box-orient: vertical;
 }
 
 .text-danger {
-    font-size: 1.15rem;
-    letter-spacing: 0.5px;
-    margin-bottom: 15px;
-}
-.card-body .btn-primary {
-    background: linear-gradient(135deg, #19b8c7, #6adae9); 
-    border: none;
-    border-radius: 8px;
-    padding: 8px 16px;
-    font-weight: 600;
-    font-size: 0.9rem;
-   
-    margin-top: auto; 
-}
-.card-body .btn-primary:hover {
-    background: linear-gradient(135deg, #4088e7, #5bb2ec);
-    box-shadow: 0 4px 10px rgba(226, 175, 233, 0.322);
+    color: #d886ec !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 12px 0;
 }
 
-h2.text-center.mb-4 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    background: linear-gradient(135deg, #0584a3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    display: block;
+.card-body .btn-primary {
+    background: #7fc8e8;
+    border: none;
+    border-radius: 20px;
+    padding: 9px 22px;
+    font-weight: 600;
+    margin-top: auto;
+    transition: 0.3s;
 }
-h2.text-center.mb-4::after {
-    content: '';
-    display: block;
-    width: 70px;
-    height: 4px;
-    background: #47e3ff;
-    margin: 12px auto 0 auto;
-    border-radius: 4px;
+
+.card-body .btn-primary:hover {
+    background: #5fb5db;
+}
+
+.card:nth-child(odd) .card-title {
+    color: #4b8fa8;
+}
+
+.card:nth-child(even) .card-title {
+    color: #d98aa8;
+}
+
+@media(max-width:768px) {
+
+    h2.text-center.mb-4 {
+        font-size: 2rem;
+    }
+
+    .text-center.mb-4 button {
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    .card-img-top {
+        height: 190px;
+    }
 }
